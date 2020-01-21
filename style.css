@@ -1,0 +1,47 @@
+
+
+section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 5;
+    max-width: none;
+    
+    height: 75vh;
+    background-image: url('https://s15.banner_test.jpg');
+    }
+section.fuck{
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 5;
+    max-width: none;
+    
+    height: 10vh;
+   
+}
+section.sexy{
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 5;
+    max-width: none;
+    
+    height: 10vh;
+
+}
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+    
