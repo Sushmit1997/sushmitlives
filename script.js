@@ -1,3 +1,3 @@
 function ageindays(){
-    alert('You are fucking Beautiful bro! ');
+    alert('Beauty lies in the eyes of beholder. This Website is Fukin-A ');
 };
