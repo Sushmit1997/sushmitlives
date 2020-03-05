@@ -1,4 +1,27 @@
 
+/* body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+*/
+
+.aboutme{
+  font-size: larger;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.button1 {border-radius: 12px;}
 .calendar{
   
   color: White;
@@ -182,16 +205,25 @@ section.twake{
   section.vlogblue {
     background-color: lightblue;
     border-radius: 10px 140px 30px 140px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
   }
 
   section.vlogyellow {
     background-color: lightsalmon;
     border-radius: 140px 10px 140px 30px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
   }
 
   section.podcastgreen {
+
     border-radius: 25px;
-    background: lightcyan;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
     
 
   }
