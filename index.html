@@ -11,16 +11,22 @@
         
 
     </head>
-    <body>
-      <script src="js/script.js">
-      window.status = "<TYPE YOUR MESSAGE>"; 
-        
+    <body onload="startTime()"> 
+      <script src="js/script.js" >
+
       </script>
+      <script src="https://unpkg.com/scrollreveal">
+
+      </script>
+      
     
       
         <header>
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
                         <a class="navbar-brand" href="index.html">Mr. Rajaure</a>
+                        <div id="txt" class='flex-box clock1'></div> 
+                        
+                        
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
@@ -84,7 +90,8 @@
                               <span class="sr-only">Next</span>
                             </a>
                           </div>
-        </header>        
+        </header>   
+        <div id="txt" class='container-fluid text-centre text-capitalize'></div>     
         <!--About me-->
         <section class='vlogyellow'>
           <div class="container-fluid">
@@ -106,6 +113,7 @@
 
           </div>
         </section>
+
         <!-- Out to conquer the world-->
         <section>
             <div class="container-fluid">
@@ -130,7 +138,42 @@
                         </div>
                 </div>
             </div>
-        </section>
+        </section>  
+        
+        
+        
+        
+        <!-- Calendar-->
+        
+        <div class='calendar'>
+          <SCRIPT LANGUAGE="JavaScript" >
+            var now = new Date();
+            
+            var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+            
+            var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+            
+            var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+            
+            function fourdigits(number)	{
+              return (number < 1000) ? number + 1900 : number;
+                            }
+            today =  days[now.getDay()] + ", " +
+                     months[now.getMonth()] + " " +
+                     date + ", " +
+                     (fourdigits(now.getYear())) ;
+            
+            document.write(today);
+            </script>
+        </div>
+        <script> 
+          ScrollReveal().reveal('.calendar');
+          </script>
+
+        <br>
+        <br>
+      
+       
        
         <!--Instagram-->
         <section class='vlogblue'>
@@ -211,10 +254,10 @@
                         <h1 class="text-center text-capitalize">Gallery</h1>
                         <hr class="w-25 mx auto pt-5">
                         <div class="row">
-                            <div class="col-lg-4 col-md-2 col-12 mx-auto" >
-                                <img src="images/IMG_1877.JPG" class="img-fluid">
+                            <div class="col-lg-4 col-md-2 col-12 mx-auto photos" >
+                                <img src="images/IMG_1877.JPG" class="img-fluid" >
                             </div>
-                            <div class="col-lg-4 col-md-2 col-12 mx-auto">
+                            <div class="col-lg-4 col-md-2 col-12 mx-auto photos">
                                     <img src="images/IMG_2174.JPG" class="img-fluid">
                                 </div>
                                 
@@ -267,6 +310,10 @@
             </section>
         <!--Contact us-->
         
+      
+      <script> 
+       ScrollReveal().reveal('.headline');
+       </script>
         <footer class="text-center bg-dark text-white">
             <p>@Copyright Sushmit_Rajaure</p>
         </footer>
