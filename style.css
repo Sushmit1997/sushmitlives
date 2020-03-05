@@ -65,7 +65,7 @@ color: white;
 }
 
 .photos img:hover{
-  filter: grayscale(100%);
+  filter: drop-shadow();
   transform: scale(1.1);
 
 
