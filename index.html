@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="google-site-verification" content="SKBa6rILT7LAqfCXis35ZvOj8Q7tfg1h8QlthDrOPeA" />
         <link href="style.css" rel="stylesheet" type="text/css" />
@@ -11,13 +12,16 @@
         
 
     </head>
-    <body onload="startTime()"> 
+    <body onload="startTime()" background=""> 
       <script src="js/script.js" >
 
       </script>
       <script src="https://unpkg.com/scrollreveal">
 
       </script>
+
+      
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       
     
       
@@ -104,11 +108,11 @@
           <div class="container-fluid">
             <h1 class="text-capitalize text-center"> Who is Sushmit?</h1>
             <script href='script.js'></script>
-            <button class='btn-primary button1' onclick="ageindays()"> Quote For Today </button>
+            <button class='btn-primary button1' onclick="inIframe()"> Quote For Today </button>
             <hr class="w-25 mx auto pt-5">
             <div class="row mb-5">
               <div class="col-lg-6 col-md-6 col-12 ,"><div class='image fit'>
-                <img  src="images/sushmit.jpg" height="350" width="350" class="img-fluid">
+                <img  src="images/sushmit.jpg" height="350" width="350" class="img-fluid" style="border-radius: 25px;">
 
               </div>
                 
@@ -135,7 +139,7 @@
                 <hr class="w-25 mx auto pt-5">
                 <div class="row mb-5">
                     
-                    <div class="col-lg-6 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-6 col-12 world">
                         <h3 class="text-capitalize">Out to conquer the world</h3>
                         <hr>
                         <p > I'm just a regular guy with a regular life and like everyone else I wish to travel the world. I love shooting and editing videos. That's what I would love to do for the rest of my life.
@@ -212,7 +216,7 @@
                       <a href="https://www.instagram.com/sushmit_rajaure/" class="btn btn-primary" target="_blank">My Instagram @sushmit_rajaure</a>
                   </div>
                   <div class=" col-lg-6 col-md-8 col-12">
-                        <img src="images/Annotation 2019-12-29 184536.png"  shift right class="img-fluid">
+                        <img src="images/Annotation 2019-12-29 184536.png"  shift right class="img-fluid" style="border-radius: 25px;">
                       </div>
               </div>
           </div>
@@ -220,7 +224,7 @@
         <!--About Me end-->
         <!--Find me On-->
         <section class ="twake"> 
-                <div class="container-fluid">
+                <div class="container-fluid findme">
                         <h1 class="text-center text-capitalize">Find Me On</h1>
                         <hr class="w-25 mx auto pt-5">
                         <div class="row">
@@ -261,6 +265,8 @@
                 <p>Email: sushmit.rajaure@gmail.com </p>
                 <p>Call me for future collaboration</p>
                 <button class="btn btn-warning" onclick="callme()">Contact Now</button>
+                <button class='btn btn-primary' onclick="chatbot()">Test A simple Chatbot</button>
+                <!-- <button class='btn btn-primary' onclick="retirementAge()"> Years Until Retirement</button> -->
             </div>
 
         </section>
