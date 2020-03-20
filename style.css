@@ -282,5 +282,16 @@ section.twake{
    top: 0;
    width: 100%;
    z-index: -1;  
+}
+
+.slideshow {
+  width:80%;
    
 }
+@media only screen and (max-width:300px) {
+  .slideshow {
+  width:50%;
+  height:20px;  
+}
+}
+
