@@ -96,10 +96,10 @@ Author: Claudio Vidal
      '“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt'];
 
  var pause=5000, p=0;
-window.onload = function sl(){
+ function quote(){
     document.getElementById('slideshow').innerHTML = (quotes[p]);
     p = (p+1)%quotes.length;
-    setTimeout(sl, pause);
+    setTimeout(quote, pause);
 };
 
  
