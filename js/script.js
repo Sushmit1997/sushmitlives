@@ -81,6 +81,6 @@ Author: Claudio Vidal
    
  }
 
- //Quote Generator
+
 
  
