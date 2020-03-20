@@ -12,23 +12,24 @@
         
 
     </head>
+    <script src="js/script.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
     <body onload="startTime()" background=""> 
-      <script src="js/script.js" >
-
-      </script>
+      
       <script src="https://unpkg.com/scrollreveal">
 
       </script>
 
       
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      
       
     
       
         <header>
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
                         <a class="navbar-brand" href="index.html">Mr. Rajaure</a>
-                        <div id="txt" class='flex-box clock1'></div> 
+                        <div id='txt' class='flex-box clock1'></div> 
                         
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,10 +103,11 @@
                             </a>
                           </div>
         </header>   
+        <br>
         
         <div id="txt" class='container-fluid text-centre text-capitalize'></div>     
         <!--About me-->
-        <section class='podcastgreen'>
+        <section class='podcastgreen' style="padding: 20px;">
           <div class="container-fluid">
             <h1 class="text-capitalize text-center"> Who is Sushmit?</h1>
             <script href='script.js'></script>
@@ -114,8 +116,7 @@
               <div class="col-lg-6 col-md-6 col-12 ,"><div class='image fit'>
                 <img  src="images/sushmit.jpg" height="350" width="350" class="img-fluid" style="border-radius: 25px;">
 
-              </div>
-                
+              </div>    
               </div>
               <div class="col-lg-6 col-md-6 col-12" shift right>
                 <p class='aboutme'>I am a Computer Engineering student and a technology enthusiast. On my spare time I usually
@@ -130,11 +131,21 @@
         <script> 
           ScrollReveal().reveal('.podcastgreen');
           </script>
+          <br>
+          <br>
+
+          <!--  Quotes slideshow-->
+          <script src='js/quotes.js'></script>
+        
+
+          <p id='slideshow' class='text-center' style='margin: auto;  font-family: fantasy ; font-size: 30px;    border: solid red 3px; border-radius:  25px; padding: 10px; ; width: 50%; justify-content: center; '> 
+
+          </p>
 
 
         <!-- Out to conquer the world-->
         <section>
-            <div class="container-fluid">
+            <div class="container-fluid world">
                 <h1  class="text-center text-capitalize "></h1>
                 <hr class="w-25 mx auto pt-5">
                 <div class="row mb-5">
@@ -147,7 +158,9 @@
                         </p>
                         &nbsp&nbsp&nbsp
 
-                        <h5>Watch My videos On Youtube  <i class="fa fa-youtube-play" aria-hidden="true"></i> </h5> <div>
+                        <h5>Watch My videos On Youtube  <i class="fa fa-youtube-play" aria-hidden="true"></i> </h5>
+                        <br>
+                         <div>
                           <a href="https://www.youtube.com/user/MegaSusmit" class="btn btn-primary" target="_blank">My Youtube Channel</a>
                         
                     </div>
@@ -162,11 +175,9 @@
         </section>  
         
         
-        
-        
         <!-- Calendar-->
         
-        <div class='calendar'>
+        <div class='calendar' style="margin: auto; width: 50%;">
           <SCRIPT LANGUAGE="JavaScript" >
             var now = new Date();
             
@@ -193,11 +204,10 @@
 
         <br>
         <br>
-      
-       
-       
+        
+  
         <!--Instagram-->
-        <section class='podcastgreen'>
+        <section class='podcastgreen' style="padding: 20px;">
           <div class="container-fluid">
               <h1 class="text-center text-capitalize">My Instagram  <i class="fa fa-instagram" aria-hidden="true"></i>  </h1> 
                
@@ -259,17 +269,19 @@
 
         </section>
         <!--Services section end-->
-        <section class="bg-dark  text-white sexy">
+        <section class="bg-dark  text-white sexy" style="padding: 20px; border: 2px solid blue; border-radius: 25px;">
             <div class="text-center">
                 <h3>Phone :+9779813058480 </h3>
                 <p>Email: sushmit.rajaure@gmail.com </p>
                 <p>Call me for future collaboration</p>
                 <button class="btn btn-warning" onclick="callme()">Contact Now</button>
                 <button class='btn btn-primary' onclick="chatbot()">Test A simple Chatbot</button>
+                
                 <!-- <button class='btn btn-primary' onclick="retirementAge()"> Years Until Retirement</button> -->
             </div>
 
         </section>
+        <br>
         <!--Gallery starts-->
         <section>
             <br>
@@ -293,11 +305,11 @@
         <!--GALLERY STOPS-->
         <!--Register start-->
         <br>
-        <br>
-        <section class="bg-dark text-capitalize text-white sexy">
+        
+        <section class="bg-dark text-capitalize text-white sexy" style="padding: 20px; border: 2px solid blue; border-radius: 25px;">
                 <div class="text-center">
                     <h3>Want to join?</h3>
-                    <p>Be Rajaure's family (Not Literally)</p>
+                    <p>Be Rajaure's family</p>
                     <button class="btn btn-warning"data-toggle="modal" data-target="#exampleModalCenter">Join Now</button>
                 </div>
                 <!-- Modal -->
