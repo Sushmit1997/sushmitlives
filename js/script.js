@@ -102,4 +102,6 @@ Author: Claudio Vidal
     setTimeout(quote, pause);
 };
 
+
+
  
