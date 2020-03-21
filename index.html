@@ -11,19 +11,12 @@
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
         
 
-    </head>
-    <script src="js/script.js" ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
-    <body onload="startTime(); quote()" background=""> 
-      
-      <script src="https://unpkg.com/scrollreveal">
-    <script src="js/script.js"> </script>
+      </head>
 
-    <!-- Time Script-->
 
-    <script>
-      
+      <!-- Time Script-->
+<script>
+        
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -57,13 +50,13 @@ function startTime() {
     setTimeout(quote, pause);
  }
     </script>
-    <body onload="quote(); startTime()"> 
-      <script src="https://unpkg.com/scrollreveal"></script>
 
-      
-      
-      
-    
+
+    <body onload=" startTime(); quote()"> 
+
+      <script src="js/script.js" > </script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       
         <header>
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
@@ -106,7 +99,7 @@ function startTime() {
                           <!-- <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                          </form> --> 
+                            </form> --> 
                         </div>
                       </nav>
                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -154,7 +147,6 @@ function startTime() {
             <div class="row mb-5">
               <div class="col-lg-6 col-md-6 col-12 ,"><div class='image fit'>
                 <img  src="images/sushmit.jpg" height="350" width="350" class="img-fluid" style="border-radius: 25px;">
-
               </div>    
               </div>
               <div class="col-lg-6 col-md-6 col-12" shift right>
@@ -168,12 +160,13 @@ function startTime() {
           </div>
         </section>
         <script> 
-          ScrollReveal().reveal('.podcastgreen','.world');
+          ScrollReveal().reveal('.podcastgreen');
           </script>
           <br>
           <br>
+
           <!-- Quotes Slideshow-->
-          <p  id='slideshow' class='text-center' style='margin: auto;  font-family: fantasy ; font-size: 30px;    border: solid red 3px; border-radius:  25px; padding: 10px; ;  justify-content: center; '> 
+          <p id='slideshow' class='text-center text-white' style='margin: auto;background-color: blueviolet;  font-family: fantasy ; font-size: 30px;    border: solid green 3px; border-radius:  25px; padding: 10px; ;  justify-content: center; '> 
 
           </p>
 
@@ -268,6 +261,7 @@ function startTime() {
           </div>
       </section>
         <!--About Me end-->
+        <br>
         <!--Find me On-->
         <section class ="twake"> 
                 <div class="container-fluid findme">
@@ -310,8 +304,8 @@ function startTime() {
                 <h3>Phone :+9779813058480 </h3>
                 <p>Email: sushmit.rajaure@gmail.com </p>
                 <p>Call me for future collaboration</p>
-                <button class="btn btn-warning" onclick="callme()">Contact Now</button>
-                <button class='btn btn-primary' onclick="chatbot()">Test A simple Chatbot</button>
+                <button class="btn btn-warning" onclick="callme();">Contact Now</button>
+                <button class='btn btn-primary' onclick="chatbot();">Test A simple Chatbot</button>
                 
                 <!-- <button class='btn btn-primary' onclick="retirementAge()"> Years Until Retirement</button> -->
             </div>

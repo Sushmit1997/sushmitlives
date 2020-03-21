@@ -10,8 +10,25 @@
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
     </head>
-    <script src="js/script.js"></script>
-    <body onload="startTime();">
+    <!-- Clock Script-->
+    <script>
+      function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+    </script>
+    <body onload="startTime()">
       <img class="backgroundimage2" src="images/vlog.png"  alt="">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
