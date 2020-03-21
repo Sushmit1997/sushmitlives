@@ -6,7 +6,7 @@ function callme() {
     alert('Please Call my number as mentioned or Email me anytime. Thank you.');
 };
 
-/*
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -22,7 +22,7 @@ function startTime() {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
   }
-  */
+  
 
  // Simple Chatbot
 
@@ -102,8 +102,4 @@ Author: Claudio Vidal
     document.getElementById('slideshow').innerHTML = (quotes[p]);
     p = (p+1)%quotes.length;
     setTimeout(quote, pause);
-};
-
-
-
- 
+}; */

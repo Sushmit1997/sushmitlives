@@ -51,10 +51,10 @@ function startTime() {
     setTimeout(quote, pause);
  }
     </script>
-    <body onload="quote(); startTime()"> 
-      <script src="https://unpkg.com/scrollreveal"></script>
+    <body onload=" startTime(); quote()"> 
 
-      
+      <script src="js/script.js" > </script>
+      <script src="https://unpkg.com/scrollreveal"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       
     
@@ -162,12 +162,12 @@ function startTime() {
           </div>
         </section>
         <script> 
-          ScrollReveal().reveal('.podcastgreen','.world');
+          ScrollReveal().reveal('.podcastgreen');
           </script>
           <br>
           <br>
           <!-- Quotes Slideshow-->
-          <p onload ="quote(); startTime()" id='slideshow' class='text-center' style='margin: auto;  font-family: fantasy ; font-size: 30px;    border: solid red 3px; border-radius:  25px; padding: 10px; ;  justify-content: center; '> 
+          <p id='slideshow' class='text-center text-white' style='margin: auto;background-color: blueviolet;  font-family: fantasy ; font-size: 30px;    border: solid green 3px; border-radius:  25px; padding: 10px; ;  justify-content: center; '> 
 
           </p>
 
@@ -262,6 +262,7 @@ function startTime() {
           </div>
       </section>
         <!--About Me end-->
+        <br>
         <!--Find me On-->
         <section class ="twake"> 
                 <div class="container-fluid findme">
@@ -304,8 +305,8 @@ function startTime() {
                 <h3>Phone :+9779813058480 </h3>
                 <p>Email: sushmit.rajaure@gmail.com </p>
                 <p>Call me for future collaboration</p>
-                <button class="btn btn-warning" onclick="callme()">Contact Now</button>
-                <button class='btn btn-primary' onclick="chatbot()">Test A simple Chatbot</button>
+                <button class="btn btn-warning" onclick="callme();">Contact Now</button>
+                <button class='btn btn-primary' onclick="chatbot();">Test A simple Chatbot</button>
                 
                 <!-- <button class='btn btn-primary' onclick="retirementAge()"> Years Until Retirement</button> -->
             </div>
