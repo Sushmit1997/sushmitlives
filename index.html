@@ -43,11 +43,13 @@ function startTime() {
     '“People who are crazy enough to think they can change the world, are the ones who do.” – Rob Siltanen',
      '“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt'];
 
- var pause=10000s, p=0;
- function quote(){
+
+     var pause=10000s, p=0;
+  function quote(){
     document.getElementById('slideshow').innerHTML = (quotes[p]);
     p = (p+1)%quotes.length;
     setTimeout(quote, pause);
+    
  }
     </script>
 
