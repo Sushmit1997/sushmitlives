@@ -33,6 +33,8 @@ function startTime() {
     return i;
   }
     </script>
+
+
     <!-- Quote Script-->
     <script >
     var quotes = ['“The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.” – Winston Churchill',
@@ -44,7 +46,7 @@ function startTime() {
      '“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt'];
 
 
-     var pause=10000s, p=0;
+    var pause=10000, p=0;
   function quote(){
     document.getElementById('slideshow').innerHTML = (quotes[p]);
     p = (p+1)%quotes.length;
