@@ -9,7 +9,24 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     <link  href="rrulestv.css"  rel="stylesheet">
-    <script src="js/script.js"></script>
+     <!-- Time Script-->
+     <script>
+        function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+      </script>
 
 
     <title >RRulesTV</title>
