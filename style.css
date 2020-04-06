@@ -135,13 +135,22 @@ section.twake{
     opacity: 1;
 }
 
-.logo {
-    border: 5px solid black;
-    flex-wrap: wrap;
-    margin: 5;
-    position: absolute;
-    align-items: center;
-    align-self: center;
+.introgaming, .youtube-link {
+   border: 5px solid black; 
+   margin: auto;
+   width: 75%;
+   align-content: center;
+   border-radius: 10px;
+   padding: 10px;
+
+
+    
+    
+    
+  
+    
+    
+    
     
     
 
@@ -150,7 +159,7 @@ section.twake{
 .navbar {
     background-color:transparent;
     transition: all 650ms cubic-bezier(1,0,0,1);
-    opacity: 95%;
+    opacity: 95;
 }
 
 .nav-link{
