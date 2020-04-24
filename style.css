@@ -159,7 +159,7 @@ section.twake{
 .navbar {
     background-color:transparent;
     transition: all 650ms cubic-bezier(1,0,0,1);
-    opacity: 95;
+    opacity: 95%;
 }
 
 .nav-link{
